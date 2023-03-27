@@ -1,0 +1,15 @@
+Title: Flatemates Bill
+Description: An app that gets as input the amount of a bill for a paticular period and that days that each of the Flatematesstayed in the house that period
+and returns how much each the flatmate has to pay. It also generates a PDF report stating the names of the flatmates, the period, and how much each of them had to pay
+Objects:Bill:
+            amount
+            period
+        Flatmate:
+            name
+            days_in_house
+            pays(bill)
+        PDFReport:
+            filename
+            generate(flatmate1, flatmate2, bill)
+
+
