@@ -1,3 +1,5 @@
+from fpdf import FPDF
+
 class Bill:
 
     """
@@ -42,4 +44,7 @@ class PDFReport:
 the_bill = Bill(120, "March 2021")
 john = Flatemate("John", 20)
 marry = Flatemate("Mary", 25)
-print(john.pays(the_bill, flatemate2=marry))
+print(f"John pays ${john.pays(the_bill, flatemate2=marry)}")
+print(f"Mary pays ${marry.pays(the_bill, flatemate2=john)}")
+
+pdf = FPDF()
